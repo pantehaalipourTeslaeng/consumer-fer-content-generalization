@@ -1,0 +1,24 @@
+# Video Processing Configuration
+input_dir: "data/raw/videos"
+output_dir: "data/processed"
+metadata_file: "data/raw/metadata.csv"
+
+# Face Detection Settings
+face_cascade_path: "configs/haarcascade_frontalface_default.xml"
+output_size: [224, 224]  # Width, Height
+frame_interval: 10  # Extract every Nth frame
+
+# Validation Settings
+min_face_size: [64, 64]  # Minimum width, height for face detection
+padding: 0.2  # Padding around detected faces
+
+# Data Split Settings
+train_split: 0.7
+val_split: 0.15
+test_split: 0.15
+
+# Category Mapping
+categories:
+  food_market: "food_and_market"
+  car_tech: "car_and_technology"
+  cosmetics_fashion: "cosmetics_and_fashion"

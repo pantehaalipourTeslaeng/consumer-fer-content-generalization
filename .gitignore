@@ -1,0 +1,67 @@
+# Data directories
+data/*
+!data/sample_data/
+!data/sample_data/**
+
+# Raw video files
+*.mp4
+*.avi
+*.mov
+*.webm
+
+# Images
+*.jpg
+*.jpeg
+*.png
+!data/sample_data/**/*.jpg
+!data/sample_data/**/*.png
+
+# Model checkpoints
+models/checkpoints/*
+*.pth
+*.h5
+*.ckpt
+
+# Processed data
+data/processed/*
+
+# Credentials and sensitive information
+configs/paths.yaml
+.env
+**/credentials.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Operating System
+.DS_Store
+Thumbs.db

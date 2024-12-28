@@ -1,0 +1,31 @@
+# Data Directories
+data:
+  root: "/path/to/data"
+  
+  # Raw data paths
+  raw:
+    neurobiosense: "${data.root}/raw/neurobiosense"
+    youtube: "${data.root}/raw/youtube"
+    synthetic: "${data.root}/raw/synthetic"
+  
+  # Processed data paths
+  processed:
+    neurobiosense: "${data.root}/processed/neurobiosense"
+    youtube: "${data.root}/processed/youtube"
+    synthetic: "${data.root}/processed/synthetic"
+
+# Model paths
+models:
+  stylegan2:
+    pretrained: "models/stylegan2/pretrained"
+    checkpoints: "models/stylegan2/checkpoints"
+  
+  fer:
+    checkpoints: "models/fer/checkpoints"
+    logs: "models/fer/logs"
+
+# Output paths
+output:
+  results: "results"
+  logs: "logs"
+  figures: "figures" 

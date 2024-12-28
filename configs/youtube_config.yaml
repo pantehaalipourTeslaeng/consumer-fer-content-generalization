@@ -1,0 +1,17 @@
+# YouTube Data Collection Configuration
+
+# Paths
+paths:
+  download_dir: "data/raw/youtube_videos"
+  frames_dir: "data/processed/youtube_frames"
+  log_dir: "data/logs/youtube"
+
+# Video Download Settings
+download:
+  max_resolution: "720p"
+  timeout: 30  # seconds
+  retries: 3
+
+# Frame Extraction Settings
+extraction:
+  frame_interval:

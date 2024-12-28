@@ -1,0 +1,35 @@
+# StyleGAN2 Configuration
+
+# Model Configuration
+model:
+  latent_size: 512
+  n_mapping: 8
+  resolution: 256  # Output resolution
+  num_channels: 3
+
+# Training Configuration
+training:
+  batch_size: 4
+  n_critic: 1
+  learning_rate: 0.002
+  beta1: 0.0
+  beta2: 0.99
+  style_mixing_prob: 0.9
+  r1_gamma: 10.0
+
+# Data Generation
+generation:
+  n_samples: 2022  # Number of synthetic images to generate
+  truncation_psi: 0.7  # Truncation trick parameter
+  seed: 42  # Random seed for reproducibility
+
+# Paths
+paths:
+  checkpoint_dir: "models/stylegan2/checkpoints"
+  output_dir: "data/processed/synthetic"
+  source_images_dir: "data/processed/frames"  # Directory containing real images for training
+  
+# Categories for conditional generation
+categories:
+  - "interested"
+  - "not_interested"

@@ -1,0 +1,59 @@
+# Analysis Configuration
+
+# Paths
+paths:
+  # Data paths
+  processed_data: "data/processed"
+  train_metadata: "data/processed/train_metadata.csv"
+  val_metadata: "data/processed/val_metadata.csv"
+  test_metadata: "data/processed/test_metadata.csv"
+  
+  # Results paths
+  training_history: "logs/training_history.csv"
+  validation_results: "logs/validation_results.csv"
+  test_results: "logs/test_results.csv"
+  
+  # Output paths
+  reports_dir: "reports"
+
+# Visualization settings
+visualization:
+  # Figure sizes
+  default_figsize: [10, 6]
+  confusion_matrix_figsize: [8, 6]
+  roc_curve_figsize: [8, 6]
+  pr_curve_figsize: [8, 6]
+  
+  # Color schemes
+  color_palette: "husl"  # seaborn color palette
+  
+  # Font sizes
+  title_size: 14
+  label_size: 12
+  tick_size: 10
+  
+  # Save format
+  dpi: 300
+  format: "png"  # or "pdf", "svg"
+
+# Analysis parameters
+analysis:
+  # Performance metrics to include
+  metrics:
+    - accuracy
+    - precision
+    - recall
+    - f1_score
+    - roc_auc
+    - pr_auc
+    
+  # Class labels
+  classes:
+    - not_interested
+    - interested
+    
+  # Categories
+  categories:
+    - food_market
+    - car_tech
+    - cosmetics_fashion
