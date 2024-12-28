@@ -38,7 +38,7 @@ The project uses three types of data sources:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/fer-content-generalization.git
+git clone https://github.com/pantehaalipourTeslaeng/consumer-fer-content-generalization.git
 cd fer-content-generalization
 ```
 
