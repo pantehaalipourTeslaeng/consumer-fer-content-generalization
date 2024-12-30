@@ -133,7 +133,7 @@ If you use this code in your research, please cite:
 @article{alipour2024leveraging,
   title={Leveraging Generative AI Synthetic and Social Media Data for Content Generalizability to Overcome Data Constraints in Vision Deep Learning},
   author={Alipour, Panteha and Gallegos, Erika},
-  journal={[Journal Name]},
+  journal={[Artificial Intelligence Review]},
   year={2024}
 }
 ```
